@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Hi , my name is Alena!!!!!</h1>
+<h2>I ve got some messages for you: </h2>
+<table border="2px">
+    <tr>
+        <th>id</th>
+        <th>text</th>
+    </tr>
+    <tr th:each="msg : ${messages}">
+        <td th:text="${msg.id}"></td>
+        <td th:text="${msg.text}"></td>
+    </tr>
+</table>
+</body>
+</html>
