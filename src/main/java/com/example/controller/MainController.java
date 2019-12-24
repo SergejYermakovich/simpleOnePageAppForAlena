@@ -17,7 +17,6 @@ public class MainController {
 
     @GetMapping("/")
     public String listMessages(Model model) {
-
         List<Message> messages = messageService.listMessages();
         model.addAttribute("messages", messages);
         return "index";
