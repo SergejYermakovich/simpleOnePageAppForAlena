@@ -17,4 +17,12 @@ public class MessageService {
         return messageDao.findAll();
     }
 
+    public void deleteById(int id) {
+        messageDao.deleteById(id);
+    }
+
+    public Message save(Message message) {
+       return messageDao.save(message);
+    }
+
 }
